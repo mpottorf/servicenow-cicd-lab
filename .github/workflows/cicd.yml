@@ -58,7 +58,7 @@ jobs:
           echo "Resolved ServiceNow instance: $INSTANCE"
           echo "SN_INSTANCE=$INSTANCE" >> "$GITHUB_ENV"
 
-        - name: Apply changes
+      - name: Apply changes
         uses: ServiceNow/sncicd-apply-changes@2.0.0
         continue-on-error: true
         env:
